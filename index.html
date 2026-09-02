@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Amruth Madanu | Data Engineer & Cloud Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#06b6d4',
+                            blue: '#3b82f6',
+                            dark: '#030712',
+                            card: '#0b0f19',
+                            border: '#1f293d'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-cyan selection:text-black">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-dark/80 backdrop-blur-xl border-b border-brand-border">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-mono text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="text-brand-cyan">&gt;</span>aravind.data<span class="animate-pulse">_</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-brand-cyan transition">About</a>
+                <a href="#skills" class="hover:text-brand-cyan transition">Skills Matrix</a>
+                <a href="#projects" class="hover:text-brand-cyan transition">Pipelines & Projects</a>
+                <a href="#education" class="hover:text-brand-cyan transition">Education</a>
+                <a href="#contact" class="hover:text-brand-cyan transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://linkedin.com/in/aravind-data-engineer" target="_blank" class="p-2.5 rounded-lg border border-brand-border text-slate-300 hover:text-brand-cyan hover:border-brand-cyan/40 transition">
+                    <i class="fa-brands fa-linkedin-in text-base"></i>
+                </a>
+                <a href="mailto:vulcan5064@gmail.com" class="bg-gradient-to-r from-brand-cyan to-brand-blue text-slate-950 font-semibold text-xs uppercase tracking-wider px-4 py-2.5 rounded-lg hover:brightness-110 transition shadow-lg shadow-cyan-500/10">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Profile Section -->
+    <section id="about" class="pt-36 pb-24 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(6,182,212,0.15),rgba(255,255,255,0))]"></div>
+        <div class="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Bio Column -->
+            <div class="lg:col-span-8 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-cyan/30 bg-brand-cyan/10 text-brand-cyan text-xs font-mono font-medium">
+                    <span class="w-2 h-2 rounded-full bg-brand-cyan animate-ping"></span>
+                    Available for Graduate, Associate & Internship Roles
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Aravind Amruth Madanu
+                </h1>
+                <p class="text-xl sm:text-2xl font-medium bg-gradient-to-r from-brand-cyan via-blue-400 to-indigo-400 bg-clip-text text-transparent font-mono">
+                    Data Engineer | Cloud & Streaming Architectures
+                </p>
+                <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Specialized in architecting scalable ETL/ELT pipelines, distributed big data processing, and cloud-native data warehousing across AWS and GCP. MSc in Computer Science candidate with expertise in real-time streaming and workflow orchestration.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#projects" class="bg-white text-slate-950 px-6 py-3 rounded-xl font-semibold text-sm hover:bg-slate-200 transition shadow-sm">
+                        Explore Technical Architecture
+                    </a>
+                    <a href="mailto:vulcan5064@gmail.com" class="border border-brand-border bg-brand-card/50 text-slate-200 px-6 py-3 rounded-xl font-semibold text-sm hover:bg-slate-900 transition">
+                        Get In Touch
+                    </a>
+                </div>
+                
+                <!-- Quick Meta Badges -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-brand-border/60 text-xs font-mono text-slate-400">
+                    <div>
+                        <span class="block text-slate-500 uppercase tracking-widest text-[10px]">Location</span>
+                        <span class="text-slate-200">Coventry, UK</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-500 uppercase tracking-widest text-[10px]">Specialization</span>
+                        <span class="text-brand-cyan">ETL/ELT & Big Data</span>
+                    </div>
+                    <div>
+                        <span class="block text-slate-500 uppercase tracking-widest text-[10px]">Cloud Focus</span>
+                        <span class="text-slate-200">AWS & Google Cloud</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Photo Column -->
+            <div class="lg:col-span-4 flex flex-col items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan to-brand-blue rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-2xl overflow-hidden border border-brand-border bg-brand-card shadow-2xl flex items-center justify-center">
+                        
+                        <!-- PHOTO ELEMENT: Replace 'headshot.jpg' with your photo path -->
+                        <img src="headshot.jpg" 
+                             alt="Aravind Amruth Madanu" 
+                             class="w-full h-full object-cover object-center" 
+                             onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';" />
+                        
+                        <!-- Fallback Placeholder if headshot.jpg is not yet added -->
+                        <div id="photo-fallback" class="hidden flex-col items-center justify-center p-6 text-center space-y-3 bg-brand-card w-full h-full">
+                            <i class="fa-solid fa-user-gear text-5xl text-brand-cyan/60"></i>
+                            <p class="text-xs font-mono text-slate-400">Place your image as <span class="text-brand-cyan">headshot.jpg</span> in the same directory</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 flex items-center gap-2 text-xs font-mono text-slate-500">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    MSc Computer Science, Coventry Univ.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="py-24 px-6 border-t border-brand-border bg-slate-950/40">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="space-y-2">
+                <p class="text-xs font-mono font-bold uppercase tracking-widest text-brand-cyan">Core Competencies</p>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">Technical Skills Matrix</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill Card 1 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-brand-cyan/10 border border-brand-cyan/20 text-brand-cyan flex items-center justify-center">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Programming & Core Data</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Python (Advanced, OOP)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">SQL</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Pandas</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">NumPy</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Modular ETL Scripting</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-brand-blue/10 border border-brand-blue/20 text-brand-blue flex items-center justify-center">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Big Data & Streaming</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Apache Spark</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">PySpark (DataFrames/SQL)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Apache Kafka</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Spark Streaming</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Distributed Processing</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Cloud Platforms</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">AWS (S3, Glue, Lambda)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Google Cloud (GCP)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">GCS</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Boto3 SDK</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">AWS IAM</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Databases & Warehousing</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Amazon Redshift</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Google BigQuery</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">PostgreSQL</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">SQLite</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Star/Snowflake Schema</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">Orchestration & DevOps</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Apache Airflow (DAGs)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Docker Basics</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Git & GitHub</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Linux / Bash</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Task Scheduling</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl space-y-4 hover:border-brand-cyan/40 transition">
+                    <div class="w-10 h-10 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-white">BI & Analytics</h3>
+                    <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Power BI (DAX)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tableau</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Executive KPI Modeling</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Interactive Dashboards</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Projects Section -->
+    <section id="projects" class="py-24 px-6 border-t border-brand-border">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="space-y-2">
+                <p class="text-xs font-mono font-bold uppercase tracking-widest text-brand-cyan">Production Architectures</p>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">Engineered Data Pipelines</h2>
+            </div>
+
+            <div class="space-y-12">
+                
+                <!-- Project 1 -->
+                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 sm:p-10 space-y-6 relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border/60 pb-6">
+                        <div>
+                            <div class="text-xs font-mono text-brand-cyan uppercase tracking-widest font-semibold">Hybrid Cloud ETL/ELT</div>
+                            <h3 class="text-2xl font-bold text-white mt-1">Enterprise End-to-End Big Data & Streaming Pipeline</h3>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">Batch + Real-Time</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            <p>
+                                Architected an enterprise-grade, hybrid cloud ETL/ELT pipeline orchestrating batch and real-time streaming workflows from raw ingestion to analytical visualization.
+                            </p>
+                            <ul class="space-y-2.5 text-sm text-slate-400">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-cyan mt-1 text-xs"></i>
+                                    <span>Implemented <strong>Apache Kafka</strong> producers and consumers to ingest high-throughput real-time streaming events into an intermediate staging layer.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-cyan mt-1 text-xs"></i>
+                                    <span>Leveraged <strong>PySpark</strong> (DataFrames, RDD operations, and Spark SQL) with window functions and aggregations for distributed transformations and deduplication.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-cyan mt-1 text-xs"></i>
+                                    <span>Engineered automated <strong>Apache Airflow DAGs</strong> managing dependencies, automated retry logic, alerting, and scheduled executions.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-cyan mt-1 text-xs"></i>
+                                    <span>Partitioned and loaded cleansed data into <strong>AWS S3 & Google Cloud Storage</strong>, creating staging models in <strong>Amazon Redshift</strong> and <strong>Google BigQuery</strong>.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-cyan mt-1 text-xs"></i>
+                                    <span>Connected analytical schemas to <strong>Power BI & Tableau</strong> dashboards, delivering executive KPI metrics and drill-down reports.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lg:col-span-4 bg-slate-950/60 border border-brand-border p-5 rounded-2xl flex flex-col justify-between space-y-6">
+                            <div class="space-y-3">
+                                <div class="text-xs font-mono text-slate-500 uppercase tracking-wider font-semibold">Tech Stack Employed</div>
+                                <div class="flex flex-wrap gap-2 font-mono text-xs">
+                                    <span class="px-2 py-1 bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 rounded">Kafka</span>
+                                    <span class="px-2 py-1 bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 rounded">PySpark</span>
+                                    <span class="px-2 py-1 bg-brand-cyan/10 text-brand-cyan border border-brand-cyan/20 rounded">Airflow</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">AWS S3</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">GCP Storage</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">Redshift</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">BigQuery</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">Power BI</span>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-brand-border text-xs text-slate-500 font-mono">
+                                Architecture: Ingestion → Kafka Buffer → Spark Processing → Cloud Storage → Warehousing → BI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 sm:p-10 space-y-6 relative overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-brand-border/60 pb-6">
+                        <div>
+                            <div class="text-xs font-mono text-brand-blue uppercase tracking-widest font-semibold">Automated Framework & Warehousing</div>
+                            <h3 class="text-2xl font-bold text-white mt-1">Modular Automated ETL Pipeline & Relational Data Warehouse</h3>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="font-mono text-xs text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg">Python & SQL Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            <p>
+                                Designed a fully automated, modular Python ETL data framework extracting transactional CSV records, applying rigorous validation rules, and handling null/anomaly transformations via Pandas.
+                            </p>
+                            <ul class="space-y-2.5 text-sm text-slate-400">
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-blue mt-1 text-xs"></i>
+                                    <span>Developed normalized relational schemas in <strong>SQLite</strong> with strict primary and foreign key constraints to preserve high data integrity and rapid execution.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-blue mt-1 text-xs"></i>
+                                    <span>Built an optimized <strong>SQL query suite</strong> utilizing multi-table JOINS, GROUP BY aggregations, HAVING filters, and analytical window functions.</span>
+                                </li>
+                                <li class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-check text-brand-blue mt-1 text-xs"></i>
+                                    <span>Implemented structured logging, error exception handling, and production-style directory hierarchies with technical documentation.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lg:col-span-4 bg-slate-950/60 border border-brand-border p-5 rounded-2xl flex flex-col justify-between space-y-6">
+                            <div class="space-y-3">
+                                <div class="text-xs font-mono text-slate-500 uppercase tracking-wider font-semibold">Tech Stack Employed</div>
+                                <div class="flex flex-wrap gap-2 font-mono text-xs">
+                                    <span class="px-2 py-1 bg-brand-blue/10 text-brand-blue border border-brand-blue/20 rounded">Python 3.x</span>
+                                    <span class="px-2 py-1 bg-brand-blue/10 text-brand-blue border border-brand-blue/20 rounded">Pandas</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">SQLite</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">Advanced SQL</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">Schema Design</span>
+                                    <span class="px-2 py-1 bg-slate-800 text-slate-300 rounded">Logging & Exception Handling</span>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-brand-border text-xs text-slate-500 font-mono">
+                                Framework: Raw CSV Source → Pandas Cleanse/Validation → SQLite Normalized Store → Reporting
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 px-6 border-t border-brand-border bg-slate-950/40">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="space-y-2">
+                <p class="text-xs font-mono font-bold uppercase tracking-widest text-brand-cyan">Academic Foundation</p>
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">Education & Degrees</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Degree 1 -->
+                <div class="bg-brand-card border border-brand-border p-8 rounded-2xl space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono text-brand-cyan px-2.5 py-1 bg-brand-cyan/10 border border-brand-cyan/20 rounded-md">Expected January 2026</span>
+                        <span class="text-xs text-slate-500 font-mono">Coventry, UK</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">MSc in Computer Science</h3>
+                        <p class="text-sm font-medium text-slate-400">Coventry University</p>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong class="text-slate-300">Key Focus:</strong> Advanced Data Structures, Cloud Computing, Distributed Systems, Software Engineering Architecture, and Modern Data Pipelines.
+                    </p>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="bg-brand-card border border-brand-border p-8 rounded-2xl space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono text-slate-400 px-2.5 py-1 bg-slate-900 border border-slate-800 rounded-md">2018 - 2022</span>
+                        <span class="text-xs text-slate-500 font-mono">India</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white">B.Tech in Computer Science & Engineering</h3>
+                        <p class="text-sm font-medium text-slate-400">JNTU Hyderabad (JNTUH)</p>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <strong class="text-slate-300">Core Coursework:</strong> Database Management Systems (DBMS), Operating Systems, OOP (Python/Java), Computer Networks, Data Warehousing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact CTA -->
+    <footer id="contact" class="py-24 px-6 border-t border-brand-border bg-brand-dark">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="space-y-3">
+                <p class="text-xs font-mono font-bold uppercase tracking-widest text-brand-cyan">Connect</p>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight">Let's Discuss Data Engineering</h2>
+                <p class="text-slate-400 text-sm max-w-lg mx-auto">
+                    Currently open to full-time Graduate, Associate, and Internship opportunities across the UK.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="mailto:vulcan5064@gmail.com" class="bg-gradient-to-r from-brand-cyan to-brand-blue text-slate-950 font-bold px-6 py-3.5 rounded-xl hover:brightness-110 transition flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>vulcan5064@gmail.com</span>
+                </a>
+                <a href="tel:+447901260810" class="border border-brand-border bg-brand-card text-slate-300 font-semibold px-6 py-3.5 rounded-xl hover:bg-slate-900 transition flex items-center gap-2 text-sm font-mono">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+44 7901260810</span>
+                </a>
+                <a href="https://linkedin.com/in/aravind-data-engineer" target="_blank" class="border border-brand-border bg-brand-card text-slate-300 font-semibold px-6 py-3.5 rounded-xl hover:bg-slate-900 transition flex items-center gap-2 text-sm">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+            </div>
+
+            <div class="pt-16 text-xs font-mono text-slate-600 border-t border-brand-border/40">
+                &copy; 2026 Aravind Amruth Madanu. Engineered for performance and clean data delivery.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
